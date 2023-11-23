@@ -1,6 +1,6 @@
 {
-  "name": "sapper",
-  "version": "0.29.3",
+  "name": "@triplemint/sapper",
+  "version": "0.29.4",
   "description": "The next small thing in web development, powered by Svelte",
   "bin": {
     "sapper": "./sapper"
@@ -42,7 +42,7 @@
     "cheap-watch": "^1.0.4",
     "cookie": "^0.4.1",
     "cross-env": "^7.0.2",
-    "devalue": "^2.0.0",
+    "devalue": "^4.3.2",
     "eslint": "^7.10.0",
     "eslint-import-resolver-typescript": "^2.2.0",
     "eslint-plugin-import": "^2.22.1",
@@ -87,7 +87,7 @@
     "dev": "rollup -cw",
     "prepublishOnly": "npm test"
   },
-  "repository": "https://github.com/sveltejs/sapper",
+  "repository": "git://github.com/triplemint/sapper",
   "keywords": [
     "svelte",
     "isomorphic",

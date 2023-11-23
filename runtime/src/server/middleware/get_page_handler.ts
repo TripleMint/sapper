@@ -2,7 +2,7 @@ import { writable } from 'svelte/store';
 import fs from 'fs';
 import path from 'path';
 import { parse } from 'cookie';
-import devalue from 'devalue';
+import * as devalue from 'devalue';
 import fetch from 'node-fetch';
 import URL from 'url';
 import { sourcemap_stacktrace } from './sourcemap_stacktrace';
@@ -414,7 +414,7 @@ function read_template(dir = build_dir) {
 
 function try_serialize(data: any, fail?: (err: Error) => void) {
 	try {
-		return devalue(data);
+		return devalue.uneval(data);
 	} catch (err) {
 		if (fail) fail(err);
 		return null;
